@@ -1,0 +1,11 @@
+查看代码：
+进入LexicalAnalyzer\src\
+Analyzer:主程序，其中analysis方法是主要的实现方法。
+IDType：存放标识符表的类
+NumType：存放常量表的类
+Token：三元组类
+
+运行程序：
+打开eclipse，file->import，选择Exiting Project into Workspace，进入本文件夹\LexicalAnalyzer，确定，选择project文件，确定。
+在eclipse中双击input，在里面编辑输入。注意：在输入的最后需要加空格。
+可双击output，查看输出，也可在eclipse的console窗口查看输出。

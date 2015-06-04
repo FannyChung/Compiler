@@ -1,0 +1,41 @@
+state	 symbol	 input	 action
+0	$	i+i+i*i$	Shift to state 5
+05	$i	+i+i*i$	Reduce by production 6
+03	$F	+i+i*i$	Reduce by production 4
+02	$T	+i+i*i$	Reduce by production 2
+01	$E	+i+i*i$	Shift to state 6
+016	$E+	i+i*i$	Shift to state 5
+0165	$E+i	+i*i$	Reduce by production 6
+0163	$E+F	+i*i$	Reduce by production 4
+0169	$E+T	+i*i$	Reduce by production 1
+01	$E	+i*i$	Shift to state 6
+016	$E+	i*i$	Shift to state 5
+0165	$E+i	*i$	Reduce by production 6
+0163	$E+F	*i$	Reduce by production 4
+0169	$E+T	*i$	Shift to state 7
+01697	$E+T*	i$	Shift to state 5
+016975	$E+T*i	$	Reduce by production 6
+0169710	$E+T*F	$	Reduce by production 3
+0169	$E+T	$	Reduce by production 1
+01	$E	$	accept
+这个输入符合设定的SLR(1)文法
+产生式顺序如下：(bottom-up)
+F->i
+T->F
+E->T
+F->i
+T->F
+E->E+T
+F->i
+T->F
+F->i
+T->T*F
+E->E+T
+-----------------------------------------
+state	 symbol	 input	 action
+0	$	i++$	Shift to state 5
+05	$i	++$	Reduce by production 6
+03	$F	++$	Reduce by production 4
+02	$T	++$	Reduce by production 2
+01	$E	++$	Shift to state 6
+这个输入不符合设定的SLR(1)文法-----------------------------------------

@@ -1,0 +1,9 @@
+查看代码：
+进入SyntaxAnalyzer\src\
+SyntaxAnalyzer类:主程序，其中analysis方法是主要的实现方法。
+Production类：产生式类，存放了各条产生式和产生式右部的个数
+
+运行程序：
+打开eclipse，file->import，选择Exiting Project into Workspace，进入本文件夹\LexicalAnalyzer，确定，选择project文件，确定。
+在eclipse中双击input，在里面编辑输入。
+可双击output，查看输出，也可在eclipse的console窗口查看输出。
